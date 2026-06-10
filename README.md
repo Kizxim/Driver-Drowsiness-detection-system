@@ -33,6 +33,9 @@ The system detects eye regions from webcam frames, predicts whether the eyes are
 ├── train_drowsiness.py             # Model training and evaluation script
 ├── drowsiness_mobilenetv2.keras    # Trained eye-state classification model
 ├── eye_model_training_curve.png    # Training accuracy/loss curve
+├── requirements.txt                # Python dependencies
+└── README.md
+```
 
 ## How It Works
 
@@ -76,11 +79,15 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-```md
-## Current Limitations
 
-- Performance may decrease when the face is too far from the webcam.
-- Downward gaze can sometimes be detected as drowsiness because the eyelid distance becomes smaller.
-- Lighting condition and partial eye occlusion can affect landmark detection.
-├── requirements.txt                # Python dependencies
-└── README.md
+Run real-time detection:
+
+```bash
+python realtime_drowsiness.py
+```
+
+Train the model:
+
+```bash
+python train_drowsiness.py
+```
