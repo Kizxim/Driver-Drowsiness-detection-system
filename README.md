@@ -71,23 +71,6 @@ The system was manually tested across common webcam scenarios:
 - Different distances from the webcam
 
 The system performs most reliably when the user faces the camera at a normal laptop distance. False warnings may occur when the face is too far from the webcam, when the eyes are partially occluded, or when head angle affects eye landmark detection.
-
-## Run the Project
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
 ```
 
-Run real-time detection:
 
-```bash
-python realtime_drowsiness.py
-```
-
-Train the model:
-
-```bash
-python train_drowsiness.py
-```
